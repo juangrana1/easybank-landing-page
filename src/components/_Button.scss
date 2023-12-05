@@ -1,0 +1,28 @@
+$light-percentage: 20%;
+
+.button {
+  background: linear-gradient(to right, $color-lime-green, $color-bright-cyan);
+  color: $color-white;
+  padding: 1rem 2.5rem;
+  border-radius: 5rem;
+  font-weight: 700;
+  width: fit-content;
+  max-height: 51px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__link {
+    width: 109.47px;
+  }
+
+  &:hover {
+    background: linear-gradient(
+      to right,
+      lighten($color-lime-green, $light-percentage),
+      lighten($color-bright-cyan, $light-percentage)
+    );
+    color: rgba($color-white, calc(100% - $light-percentage));
+  }
+}

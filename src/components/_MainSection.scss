@@ -1,0 +1,47 @@
+.main-section {
+  height: 650px;
+  background-color: $color-l-grayish-blue;
+  padding-left: 10rem;
+
+  display: grid;
+  grid-template-columns: 1fr 2.6fr;
+
+  &__text-container {
+    grid-column: 1 / 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__title {
+      font-size: 4rem;
+      font-weight: 300;
+      color: $color-dark-blue;
+      margin-bottom: 2rem;
+    }
+
+    &__description {
+      font-size: 1.2rem;
+      color: $color-grayish-blue;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__images-container {
+    height: 650px;
+    grid-column: 2 / 3;
+    overflow: hidden;
+
+    &__banner {
+      z-index: 2;
+      transform: translate(82%, -14%);
+      position: relative;
+    }
+
+    &__background {
+      z-index: 1;
+      transform: translate(20%, -100%);
+      position: relative;
+    }
+  }
+}
