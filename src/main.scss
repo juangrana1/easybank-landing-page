@@ -2,6 +2,7 @@
 @import './sass/reset';
 
 // Variables
+@import './sass/mixins';
 @import './sass/colors';
 @import './sass/font';
 
@@ -10,4 +11,5 @@
 @import './components/Button';
 @import './components/MainSection';
 
-// Elements
+// Layout
+@import './layout/Container';

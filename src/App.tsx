@@ -7,13 +7,13 @@ export default function App() {
     <>
       <Header
         items={["Home", "About", "Contact", "Blog", "Careers"]}
-        button={<Button />}
+        button={<Button parentClass="header" />}
       />
       <MainSection
         title="Next generation digital banking"
         description="Take your financial life online. Your EasyBank account will be a one-stop
         shop for spending, saving, budgeting, investing, and much more."
-        button={<Button />}
+        button={<Button parentClass="main-section" />}
       />
     </>
   );
