@@ -1,0 +1,22 @@
+.description-box {
+    max-width: 230px;
+    margin: 5rem 2rem 0 0;
+
+    &:last-of-type {
+        margin-right: 0;
+    }
+
+    &__image {
+        margin-bottom: 2rem;
+    }
+
+    &__title {
+        @include text-container (1.5rem, $color-dark-blue, 1.5rem);
+        font-weight: 300;
+    }
+
+    &__description {
+        @include text-container (1rem, $color-grayish-blue, 0)
+    }
+
+}

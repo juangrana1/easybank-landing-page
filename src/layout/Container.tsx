@@ -3,11 +3,7 @@ export default function Container(props: {
   parentClass: string;
 }) {
   return (
-    <div
-      className={`container${
-        props.parentClass ? ` ${props.parentClass}__container` : ""
-      }`}
-    >
+    <div className={`container ${props.parentClass}__container`}>
       {props.children}
     </div>
   );

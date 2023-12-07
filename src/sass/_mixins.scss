@@ -3,3 +3,10 @@
   margin: 0 auto;
   min-width: 750px;
 }
+
+@mixin text-container($font-size, $color, $margin-bottom: 2rem, $line-height: 1.5) {
+  font-size: $font-size;
+  color: $color;
+  margin-bottom: $margin-bottom;
+  line-height: $line-height;
+}

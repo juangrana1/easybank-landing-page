@@ -4,7 +4,7 @@ $container-padding: 0 2rem;
 .container {
   width: calc(100% - $container-margin);
   margin: 0 auto;
-  min-width: max-content;
+  min-width: 600px;
   display: flex;
   align-items: center;
   padding: $container-padding;
