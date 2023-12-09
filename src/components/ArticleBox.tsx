@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 import Currency from "../images/image-currency.jpg";
 import Restaurant from "../images/image-restaurant.jpg";
@@ -12,6 +12,8 @@ export default function ArticleBox(props: {
   imageName: string;
 }) {
   const image = useRef<string>();
+
+  const [isHovered, setIsHovered] = useState<boolean>(false);
 
   switch (props.imageName) {
     case "Currency":
@@ -29,8 +31,12 @@ export default function ArticleBox(props: {
   }
 
   return (
-      <div className="article-box">
-        <a href="#" className="article-box__article-link">
+    <div
+      className="article-box"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <a href="#" className="article-box__article-link">
         <img
           src={image.current}
           alt={props.imageName}
@@ -40,11 +46,20 @@ export default function ArticleBox(props: {
           <div className="article-box__article-link__text-container__author">
             By {props.author}
           </div>
-          <h3 className="article-box__article-link__text-container__title">{props.title}</h3>
+          <h3
+            className={`article-box__article-link__text-container__title${
+              isHovered
+                ? " article-box__article-link__text-container__title--hover"
+                : ""
+            }`}
+          >
+            {props.title}
+          </h3>
           <p className="article-box__article-link__text-container__description">
             {props.description}
           </p>
-        </div></a>
-      </div>
+        </div>
+      </a>
+    </div>
   );
 }

@@ -27,6 +27,10 @@
       &__title {
         @include text-container(1.1rem, $color-dark-blue, 0.5rem);
         font-weight: 400;
+
+        &--hover {
+          color: $color-lime-green;
+        }
       }
 
       &__description {
