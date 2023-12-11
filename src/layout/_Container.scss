@@ -2,9 +2,9 @@ $container-margin: 20rem;
 $container-padding: 0 2rem;
 
 .container {
-  width: calc(100% - $container-margin);
+  max-width: 1440px;
   margin: 0 auto;
-  min-width: 600px;
+  width: 100%;
   display: flex;
   align-items: center;
   padding: $container-padding;
