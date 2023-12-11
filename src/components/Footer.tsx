@@ -57,7 +57,6 @@ export default function Footer(props: PropsLayout) {
                   src={InstagramIcon}
                   alt="Instagram Icon"
                   className="footer__first-block__images__icons-box__social-media-icon"
-                  style={{ fill: "green" }}
                 />
               </a>
             </div>

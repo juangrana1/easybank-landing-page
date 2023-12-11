@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react";
+
 import Header from "./components/Header";
 import Button from "./components/Button";
 import Section from "./components/Section";
@@ -6,11 +8,23 @@ import ArticleBox from "./components/ArticleBox";
 import Footer from "./components/Footer";
 
 export default function App() {
+  const [screenWidth, setScreenWidth] = useState<number>(window.innerWidth);
+
+  useEffect(() => {
+    const handleResizeWindow = () => setScreenWidth(window.innerWidth);
+    window.addEventListener("resize", handleResizeWindow);
+
+    return () => {
+      window.removeEventListener("resize", handleResizeWindow);
+    };
+  }, [window.innerWidth]);
+
   return (
     <>
       <Header
         items={["Home", "About", "Contact", "Blog", "Careers"]}
         button={<Button parentClass="header" />}
+        screenWidth={screenWidth}
       />
       <Section
         title="Next generation digital banking"
@@ -75,7 +89,17 @@ export default function App() {
           />,
         ]}
       />
-      <Footer items={['About Us', 'Contact', 'Blog', 'Careers', 'Support', 'Privacy Policy']} button={<Button parentClass="footer" />}/>
+      <Footer
+        items={[
+          "About Us",
+          "Contact",
+          "Blog",
+          "Careers",
+          "Support",
+          "Privacy Policy",
+        ]}
+        button={<Button parentClass="footer" />}
+      />
     </>
   );
 }
