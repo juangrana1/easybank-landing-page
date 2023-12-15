@@ -43,11 +43,15 @@
     height: unset;
     min-height: 190px;
 
+    &__button {
+      margin-bottom: unset;
+    }
+
     &__container {
       gap: 2rem;
 
       display: grid;
-      grid-template-rows: 1fr 1fr;
+      grid-template-rows: 190px 51px;
       grid-template-columns: 1fr 1fr 1fr;
     }
 
@@ -57,24 +61,12 @@
       width: 100%;
       grid-column: 1 / 4;
       grid-row: 1;
-      padding-top: 2rem;
 
       &__images {
-        justify-content: space-around;
-        margin-bottom: 2rem;
+        justify-content: center;
 
         &__logo {
           margin-bottom: 2rem;
-        }
-      }
-
-      &__navbar {
-        &__list {
-          &__item {
-            margin-bottom: 2rem;
-
-            
-          }
         }
       }
     }
@@ -83,7 +75,6 @@
       width: 100%;
       grid-column: 1 / 4;
       grid-row: 2;
-      padding-bottom: 2rem;
 
       &__last-box {
         align-items: center;
@@ -107,6 +98,8 @@
   }
 
   .footer {
+    padding: 3rem 0;
+
     &__first-block {
       display: flex;
       flex-direction: column;
@@ -119,6 +112,7 @@
           display: unset;
 
           &__item {
+            margin-bottom: 1rem;
             &:last-of-type {
               margin-bottom: unset;
             }
@@ -130,6 +124,7 @@
         margin-right: unset;
         width: 100%;
         justify-content: center;
+        margin-bottom: 2rem;
 
         &__logo {
           width: 150px;
