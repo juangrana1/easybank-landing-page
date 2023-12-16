@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import Logo from "../images/logo.svg";
 import Container from "../layout/Container";
 
@@ -12,8 +10,6 @@ interface PropsLayout {
 }
 
 export default function Header(props: PropsLayout) {
-  const [isHovering, setIsHovering] = useState<boolean>(false);
-
   return (
     <header className="header">
       <Container parentClass="header">
@@ -29,9 +25,7 @@ export default function Header(props: PropsLayout) {
                   >
                     <a
                       href="#"
-                      className='header__navbar__list__item__link'
-                      onMouseEnter={() => setIsHovering(true)}
-                      onMouseLeave={() => setIsHovering(false)}
+                      className="header__navbar__list__item__link"
                     >
                       {item}
                     </a>
