@@ -50,12 +50,6 @@
       &__icons-box {
         display: flex;
         justify-content: space-between;
-
-        &__social-media-icon path {
-          &:hover {
-            fill: $color-lime-green;
-          }
-        }
       }
     }
   }

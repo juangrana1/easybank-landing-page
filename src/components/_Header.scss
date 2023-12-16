@@ -5,6 +5,8 @@
   align-items: center;
 
   &__container {
+    height: 100%;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,17 +21,39 @@
   }
 
   &__navbar {
+    height: 100%;
+
     &__list {
+      height: 100%;
       list-style: none;
 
       display: flex;
 
       &__item {
+        height: 100%;
         margin-right: 2rem;
         color: $color-grayish-blue;
 
+        display: flex;
+
         &:hover {
           color: $color-dark-blue;
+          padding-top: 4px;
+          border-bottom: 4px solid;
+          border-image-source: linear-gradient(
+            to right,
+            $color-lime-green,
+            $color-bright-cyan
+          );
+          border-image-slice: 1;
+        }
+
+        &__link {
+          height: 100%;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
 
         &:last-of-type {

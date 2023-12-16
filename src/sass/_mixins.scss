@@ -1,7 +1,6 @@
 @mixin responsive-margin {
   width: calc(100% - 20rem);
   margin: 0 auto;
-  min-width: 750px;
 }
 
 @mixin text-container(

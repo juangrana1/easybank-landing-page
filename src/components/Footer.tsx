@@ -24,39 +24,39 @@ export default function Footer(props: PropsLayout) {
               className="footer__first-block__images__logo"
             />
             <div className="footer__first-block__images__icons-box">
-              <a href="#">
+              <a href="#" className="footer__first-block__images__icons-box__link">
                 <img
                   src={FacebookIcon}
                   alt="Facebook Icon"
-                  className="footer__first-block__images__icons-box__social-media-icon"
+                  className="footer__first-block__images__icons-box__link__icon"
                 />
               </a>
-              <a href="#">
+              <a href="#" className="footer__first-block__images__icons-box__link">
                 <img
                   src={YoutubeIcon}
                   alt="Youtube Icon"
-                  className="footer__first-block__images__icons-box__social-media-icon"
+                  className="footer__first-block__images__icons-box__link__icon"
                 />
               </a>
-              <a href="#">
+              <a href="#" className="footer__first-block__images__icons-box__link">
                 <img
                   src={TwitterIcon}
                   alt="Twitter Icon"
-                  className="footer__first-block__images__icons-box__social-media-icon"
+                  className="footer__first-block__images__icons-box__link__icon"
                 />
               </a>
-              <a href="#">
+              <a href="#" className="footer__first-block__images__icons-box__link">
                 <img
                   src={PinterestIcon}
                   alt="Pinterest Icon"
-                  className="footer__first-block__images__icons-box__social-media-icon"
+                  className="footer__first-block__images__icons-box__link__icon"
                 />
               </a>
-              <a href="#">
+              <a href="#" className="footer__first-block__images__icons-box__link">
                 <img
                   src={InstagramIcon}
                   alt="Instagram Icon"
-                  className="footer__first-block__images__icons-box__social-media-icon"
+                  className="footer__first-block__images__icons-box__link__icon"
                 />
               </a>
             </div>
