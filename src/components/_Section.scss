@@ -28,18 +28,28 @@
 
 
   &__text-container {
+    max-width: 490px;
+
     &__title {
       @include text-container(4rem, $color-dark-blue);
     }
   }
 
   &__images-container {
+
     &__banner {
-      display: none;
+      position: absolute;
+      z-index: 2;
+
+      display: flex;
     }
 
     &__background {
-      display: none;
+      position: absolute;
+      z-index: 1;
+
+      display: flex;
+      top: -12rem;
     }
   }
 }

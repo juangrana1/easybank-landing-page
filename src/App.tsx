@@ -36,7 +36,7 @@ export default function App() {
       />
       <Section
         title="Why choose Easybank?"
-        description="We leverage Open Banking to turn your bank account into your financial hub. Control your finances like never before"
+        description="We leverage Open Banking to turn your bank account into your financial hub. Control your finances like never before."
         class="description-section"
         titleNum={2}
         boxes={[
