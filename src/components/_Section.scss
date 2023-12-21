@@ -12,7 +12,7 @@
       @include text-container(1.2rem, $color-grayish-blue);
     }
   }
-  
+
   &__boxes-container {
     display: flex;
     width: 100%;
@@ -20,36 +20,45 @@
 }
 
 .main-section {
-  background: linear-gradient($color-l-grayish-blue 5%, $color-vl-grayish-blue 95%);
+  background: linear-gradient(
+    $color-l-grayish-blue 5%,
+    $color-vl-grayish-blue 95%
+  );
   min-height: 650px;
 
-  display: flex;
-  align-items: center;
+  &__container {
+    min-height: 650px;
+    margin: 0 0 0 calc((100% - 1440px) / 2);
+    max-width: unset;
+    padding-right: 0;
+  }
 
+  &__banner-container {
+    width: 100%;
+    position: relative;
+    height: 650px;
+    background-image: url("./images/bg-intro-desktop.svg");
+    background-repeat: no-repeat;
 
-  &__text-container {
-    max-width: 490px;
-
-    &__title {
-      @include text-container(4rem, $color-dark-blue);
+    display: flex;
+    justify-content: right;
+    &__banner {
+      position: absolute;
+      top: -8rem;
+      right: -8rem;
     }
   }
 
-  &__images-container {
+  &__text-container {
+    max-width: 490px;
+    min-height: 650px;
 
-    &__banner {
-      position: absolute;
-      z-index: 2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
-      display: flex;
-    }
-
-    &__background {
-      position: absolute;
-      z-index: 1;
-
-      display: flex;
-      top: -12rem;
+    &__title {
+      @include text-container(4rem, $color-dark-blue);
     }
   }
 }

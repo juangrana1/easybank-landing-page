@@ -1,21 +1,21 @@
 // Reset
-@import './sass/reset';
+@import "./sass/reset";
 
 // Variables
-@import './sass/mixins';
-@import './sass/colors';
-@import './sass/font';
-
-// Components
-@import './components/Header';
-@import './components/Button';
-@import './components/Section';
-@import './components/DescriptionBox';
-@import './components/ArticleBox';
-@import './components/Footer';
+@import "./sass/mixins";
+@import "./sass/colors";
+@import "./sass/font";
 
 // Layout
-@import './layout/Container';
+@import "./layout/Container";
+
+// Components
+@import "./components/Header";
+@import "./components/Button";
+@import "./components/Section";
+@import "./components/DescriptionBox";
+@import "./components/ArticleBox";
+@import "./components/Footer";
 
 // Media queries
-@import './sass/media';
+@import "./sass/media";

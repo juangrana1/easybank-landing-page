@@ -1,3 +1,11 @@
+@media (max-width: 1440px) {
+  .main-section {
+    &__container {
+      margin: unset;
+    }
+  }
+}
+
 @media (max-width: 1000px) {
   .header {
     &__logo {

@@ -57,18 +57,11 @@ export default function Section(props: PropsLayout) {
           {props.button && props.button}
         </div>
         {!props.boxes ? (
-          <div
-            className={`section__images-container ${props.class}__images-container`}
-          >
+          <div className={`section__banner-container ${props.class}__banner-container`}>
             <img
               src={Banner}
               alt="Banner"
-              className={`section__images-container__banner ${props.class}__images-container__banner`}
-            />
-            <img
-              src={BannerBackground}
-              alt="Banner Background"
-              className={`section__images-container__background ${props.class}__images-container__background`}
+              className={`section__banner-container__banner ${props.class}__banner-container__banner`}
             />
           </div>
         ) : (
