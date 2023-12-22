@@ -39,13 +39,12 @@
     height: 650px;
     background-image: url("./images/bg-intro-desktop.svg");
     background-repeat: no-repeat;
+    background-position: 100px -260px;
+    text-align: center;
 
-    display: flex;
-    justify-content: right;
     &__banner {
       position: absolute;
       top: -8rem;
-      right: -8rem;
     }
   }
 
